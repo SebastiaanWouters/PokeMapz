@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+
+<title>PokeMapz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PokeMapz</title>
+<meta name="Description" content="PokeMapz - Hier vind je maps voor verschillende regio's. We bieden ook notificaties aan voor pokémon in de buurt. Dit gebeurt allemaal in real-time!">
+<meta name="Keywords" content="PokeMapz, pokemapz.info, antwerpen, pokemon go, map, live, info, pokemapz">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="MainBootstrap.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://www.iconj.com/ico/x/z/xzrj6rd6cw.ico" type="image/x-icon" />
+
+</head>
+<body class="aliens">
+ 
+<header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img class="img-responsive" src="logo.png" alt="logo">
+      <a id="title" class="navbar-brand" href="index.html">PokeMapz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+        <a href="index.html" class="hoofding">Home</a></li>
+        <li><a href="Regios.html" class="hoofding">Regio Aanvragen</a></li>
+        <li><a href="Betalingen.html" class="hoofding">Betalingen</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+  <div class="col-sm-12 col-xs-12">
+      <div class=" panel panel-default">
+        <div class="background panel-body">
+           <h1>--- PokeMapz ---</h1>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-8 col-xs-12">
+  	<div class="panel panel-default">
+	    <div class="background panel-body">
+	    <h1>Info</h1>
+    	          <p>PokeMapz is een website die Live Pokemon Maps aanbiedt, deze maps geven alle Pokemon in jouw regio weer.</p>
+		  <p> Op de Maps kan je ook de Moves, IV en resterende tijd van de Pokemon zien.</p>
+		  <p> We ondersteunen ook Telegram Chats. Telegram is een app voor Android, IOS en PC.</p>
+		  <p> Met deze app ontvang je meldingen wanneer er een zeldzame Pokemon in je buurt zit</p>
+	    </div>
+   </div>
+  </div>
+  <div class="col-md-4 col-xs-12">
+  	<div class="panel panel-default">
+	    <div class="background panel-body">
+	     <h1> Doneren? Dat Kan Hier!</h1>
+	     <p>Als je plezier beleeft aan het gebruiken van de maps, en ons een handje wilt helpen. Dan kan je PokeMapz hier steunen met een kleine donatie!
+		 <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+	   		<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="UYHE9KMPJ2DR6">
+			<input type="image" src="https://www.paypalobjects.com/nl_NL/BE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, de veilige en complete manier van online betalen.">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		 </form>
+
+	    </div>
+   </div>
+  </div>
+  <div class="col-md-4 col-xs-12" >
+  	<div class="panel panel-default regios">
+	    <div class="regio background panel-body">
+	    <h1>Regio's</h1>
+	    <ul>
+	      <li><a class="list" href="http://antwerpen.pokemapz.info">Antwerpen</a></li>
+              <li><a class="list" href="http://balen.pokemapz.info">Balen/Wezel</a></li>
+              <li><a class="list" href="http://blankenberge.pokemapz.info">Blankenberge</a></li>
+              <li><a class="list" href="http://duffel.pokemapz.info">Duffel</a></li>
+              <li><a class="list" href="http://ekeren.pokemapz.info">Ekeren</a></li>
+              <li><a class="list" href="http://heist.pokemapz.info">Heist</a></li>
+              <li><a class="list" href="http://hoboken.pokemapz.info">Hoboken</a></li>
+	      <li><a class="list" href="http://hove.pokemapz.info">Hove</a></li>
+              <li><a class="list" href="http://lebbeke.pokemapz.info">Lebbeke</a></li>
+              <li><a class="list" href="http://leuven.pokemapz.info">Leuven</a></li>
+              <li><a class="list" href="http://lier.pokemapz.info">Lier</a></li>
+              <li><a class="list" href="http://merksem.pokemapz.info">Merksem</a></li>
+              <li><a class="list" href="http://nijlen.pokemapz.info">Nijlen</a></li>
+              <li><a class="list" href="http://oss.pokemapz.info">Oss</a></li>
+              <li><a class="list" href="http://overpelt.pokemapz.info">Overpelt</a></li>
+              <li><a class="list" href="http://rumst.pokemapz.info">Rumst</a></li>
+	      <li><a class="list" href="http://katelijne.pokemapz.info">Sint-Katelijne-Waver</a></li>
+              <li><a class="list" href="http://uden.pokemapz.info">Uden</a></li>
+              <li><a class="list" href="http://vlaardingen.pokemapz.info">Vlaardingen</a></li>
+            </ul>
+	    </div>
+   </div>
+  </div>
+  <div class="col-md-4 col-xs-12">
+  	<div class="panel panel-default">
+	    <div class="background panel-body">
+	    <h1>Telegram Bots</h1>
+	     <ul>
+	      <li><a class="list" href="https://telegram.me/PokebotAntwerpen">Antwerpen</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEKMcI2TTp8xYQnoWQ">Balen/Wezel</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAD_rqjpd_R9HQYU3PA">Blankenberge</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAED0Ke5WQq8GuWfQNA">Duffel</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEEb8i9sXw9LLo8Jog">Ekeren</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEGq_IP4AlPZL_frnQ">Heist</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEKaVh_6q-bINR8quQ">Hoboken</a></li>
+	      <li><a class="list" href="https://t.me/PokeMapzHove">Hove</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEJSzPgjJwhwy6KcvA">Lebbeke</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEB0ci__zW2NCU8L6w">Leuven</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEIFh3eXrJAbsaSwNA">Lier</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEGRjfDqhocGx4URmA">Merksem</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEGuHSlat9_FT89hbQ">Nijlen</a></li>  
+	      <li><a class="list" href="https://t.me/PokeMapzOss">Oss</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEF9cps4w2lwVMP1ZQ">Overpelt</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEGbjJvShD_QpyaZ9Q">Rumst</a></li>
+	      <li><a class="list" href="https://telegram.me/PokeBot_Katelijne">Sint-Katelijne-Waver</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEI9-JE0ZTBulDCyog">Uden</a></li>
+              <li><a class="list" href="https://t.me/joinchat/AAAAAEJW9GvWUnRj-PZWBA">Vlaardingen</a></li>
+             </ul>
+	    </div>
+   </div>
+  </div>
+
+  <div class="col-md-4 col-xs-12">
+   <div class="panel panel-default">
+
+	    <div class="background panel-body">
+	        <h1 class="aliens" > Check of like zeker onze Facebook!</h1>
+	        
+  			<iframe class="FB" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.pokemapz.info&width=300&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId=1839645299646056" width="300" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  			
+  	    </div>
+   </div>
+	    
+   
+  </div>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script>
+function myFunction() {
+    alert("De Maps zijn vanaf nu betalend. Als je wil bijdragen of meer info nodig hebt, kan je terecht op het tabblad 'Betalingen'. Als jouw regio nog niet gescand word, kan je dat aanvragen op het tabblad 'Regio Aanvragen'\n\nCatch'Em All!");
+}
+</script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92406992-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8003862405843117",
+    enable_page_level_ads: true
+  });
+</script>
+</body>
+
+
+</html>

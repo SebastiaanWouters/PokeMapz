@@ -1,0 +1,163 @@
+@font-face {
+    font-family: finition;
+    src: url(Finition.ttf);
+    
+}
+@font-face {
+    font-family: aliens;
+    src: url(comforta.ttf);
+  
+    
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+header{
+    font-family: aliens;
+    
+}
+.background {
+    box-shadow: 2px 2px 6px 6px #333;
+    background: #e6e6ff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius:3px;
+    float: all;
+        
+}
+.background-orange {
+    box-shadow: 2px 2px 6px 6px #333;
+    background: orange;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius:3px;
+    float: all;
+    
+}
+.background-green {
+    box-shadow: 2px 2px 6px 6px #333;
+    background: green;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius:3px;
+    float: all;
+    
+}
+.background-red {
+    box-shadow: 2px 2px 6px 6px #333;
+    background: red;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius:3px;
+    float: all;
+}
+
+
+.background:hover {
+box-shadow: 1px 1px 7px 7px #200;
+}
+.background-orange:hover {
+box-shadow: 1px 1px 7px 7px #200;
+}
+.background-green:hover {
+box-shadow: 1px 1px 7px 7px #200;
+}
+.background-red:hover {
+box-shadow: 1px 1px 7px 7px #200;
+}
+#donate {
+   margin: 20px;
+   padding: 40px;
+   color: yellow;
+   width: 300px;
+}
+
+.img-responsive {
+	width: 80px;
+	height:80px;
+    float:left;
+    margin:5px 2px;
+    padding:0;
+}
+.hoofding{
+    margin:15px 4px;
+    padding:0;
+}
+.navbar-brand {
+	margin:15px 4px;
+	
+}
+body {
+	
+    background-image: url("wallpaper.jpg");
+    font-family:aliens;
+    
+}
+#title {
+	font-size:40px;
+	font-family:Finition;
+}
+iframe {
+	margin-top:30px;
+	display: block;
+	align-self: center
+}
+.regio {
+  clear:left;
+}
+.aliens {
+   font-family: aliens;
+}
+.FB {
+    
+    text-align: center;
+    margin-top:10px;
+    margin-right:0px;
+    margin-left:14px;
+
+
+}
+.tekstbalk {
+  clear: both;
+
+}
+h1 {
+	font-family: aliens;
+	text-align: center;
+}
+h2 {
+
+	font-family: aliens;
+	text-align: center;
+	color:red;
+}
+p {
+	font-family: aliens;
+	text-align: center;
+        font-weight:large;
+}
+.regios {
+
+	clear:both;
+}
+#paypal {
+    text-align: center;
+    
+}
+ul {
+	list-style-type:none;
+	
+	
+}
+.list {
+	margin-top:10%;
+        padding: 0;
+	color:black;
+	text-decoration: none;
+	display:inline-block;
+	font-weight:bold;
+}

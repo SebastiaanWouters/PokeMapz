@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+<head>
+
+<title>PokeMapz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PokeMapz - Betalingen</title>
+<meta name="Description" content="PokeMapz - Hier vind je maps voor verschillende regio's. We bieden ook notificaties aan voor pokĆ©mon in de buurt. Dit gebeurt allemaal in real-time!">
+<meta name="Keywords" content="PokeMapz, pokemapz.info, antwerpen, pokemon go, map, live, info, pokemapz">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="MainBootstrap.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://www.iconj.com/ico/x/z/xzrj6rd6cw.ico" type="image/x-icon" />
+
+</head>
+<body class="aliens">
+ 
+<header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img class="img-responsive" src="logo.png" alt="logo">
+      <a id="title" class="navbar-brand" href="index.html">PokeMapz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li>
+        <a href="index.html" class="hoofding">Home</a></li>
+        <li><a href="Regios.html" class="hoofding">Regio Aanvragen</a></li>
+        <li><a href="#" class="hoofding">Betalingen</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class=" col-sm-12 col-xs-12">
+    <div class=" panel panel-default">
+      <div class="background panel-body">
+      <h1>Hoe betaal je voor jouw regio?</h1>
+        <p>Doneer een gewenst bedrag via de Payapl-Knop heironder. </p>
+        <p>---</p>
+        <p>Voeg bij de mededling toe voor welke regio je doneert!</p>
+        <p>---</p>
+        <p>De lijst met bedragen wordt niet automatisch bijgewerkt. Dit gebeurt wel dagelijks!</p>
+        <p>Als het maandelijkse bedrag bereikt is zal de datum voor jouw regio een maand opschuiven</p>
+        <p>---</p>
+        <p>Niet alles duidelijk? Stuur gerust een bericht naar onze Facebook Pagina!</p>
+      </div>
+   </div>
+  </div>
+<div class="col-sm-12 col-xs-12">
+        <div class="panel panel-default">
+            <div class="background panel-body">
+		<h1>Hier kan je betalen voor jouw regio</h1>
+		<p>Vergeet niet om de naam van je regio toe te voegen als mededeling!</p>
+                <h1>---OPGEPAST---</h1>
+                <p>Paypal eist 9 procent van de betaling op als transactiekosten.</p>
+                <p>Om effectief 10 euro bij te dragen zal je dus zo'n 10,9 euro moeten doneren.</p>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center" >
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="C35JCU39KTX82">
+		<input type="image" src="https://www.paypalobjects.com/nl_NL/BE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, de veilige en complete manier van online betalen.">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+            </div>
+        </div>
+</div>
+
+
+  <div class=" col-sm-12 col-xs-12">
+    <div class=" panel panel-default">
+      <div class="tekstbalk background panel-body">
+      <h1>Wachtrij</h1>
+      </div>
+   </div>
+  </div>
+
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Kapellen</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Activatie Kapellen</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Stabroek</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Activatie Stabroek</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Mechelen</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;$
+       <span class="sr-only">Activatie Mechelen</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+ 
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Brasschaat</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Activatie Brasschaat</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Ronse/Elzele</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Activatie Ronse</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Gent</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Activatie Gent</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+    <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Grimbergen</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Activatie Grimbergen</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background panel-body">
+       <h1>Amsterdam</h1>
+       <p>Status: Niet Geactiveerd</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 0/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Activatie Amsterdam</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-green panel-body">
+       <h1>Krommenie</h1>
+       <p>Status: Bezig Met Activatie</p>
+       <p>Activatiekost: 5 EURO</p>
+       <p>Betaald: 10/5 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+       <span class="sr-only">Activatie Krommenie</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+
+  <div class=" col-sm-12 col-xs-12">
+    <div class=" panel panel-default">
+      <div class="tekstbalk background panel-body">
+      <h1>Actieve Regio's</h1>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Katelijne</h1>
+       <p> Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 01/05</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Sint-Katelijne-Waver</span>
+  </div>
+</div>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Antwerpen</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 01/05</p>
+       <p>Betaald: 0,5/15 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 3%;">
+       <span class="sr-only">Voortgang betaling Antwerpen</span>
+       </div>
+  </div>
+      </div>
+   </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Duffel</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 18/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%$
+       <span class="sr-only">Voortgang betaling Duffel</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Hove</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 01/05</p>
+       <p>Betaald: 1/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+       <span class="sr-only">Voortgang betaling Hove</span>
+      </div>
+    </div> 
+      </div>
+  </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Lier</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 18/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%$
+       <span class="sr-only">Voortgang betaling Lier</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+  
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Merksem</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 20/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%$
+       <span class="sr-only">Voortgang betaling Merksem</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Lebbeke</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 20/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%$
+       <span class="sr-only">Voortgang betaling Lebbeke</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-green panel-body">
+       <h1>Oss</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 15/04</p>
+       <p>Betaald: 15/15 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+       <span class="sr-only">Voortgang betaling Oss</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Hoboken</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 16/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Hoboken</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Vlaardingen</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 16/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Vlaardingen</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+ 
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Leuven</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 22/04</p>
+       <p>Betaald: 0/15 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Leuven</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+ 
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Ekeren</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 22/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Ekeren</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+ 
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Overpelt</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 22/04</p>
+       <p>Betaald: 0/15 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Overpelt</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Balen/Wezel</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 22/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Balen</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+  
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Rumst</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 27/04</p>
+       <p>Betaald: 5/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+       <span class="sr-only">Voortgang betaling Rumst</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Blankenberge</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 30/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Blankenberge</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+ 
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Heist</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 30/04</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Heist</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Nijlen</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 03/05</p>
+       <p>Betaald: 0/10 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Nijlen</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+   <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default">
+      <div class="background-orange panel-body">
+       <h1>Uden</h1>
+       <p>Status: Geactiveerd </p>
+       <p>Te Betalen Tegen: 03/05</p>
+       <p>Betaald: 0/15 EURO</p>
+       <div class="progress">
+       <div class="progress-bar progress-bar active betalingbalk" role="progressbar " aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+       <span class="sr-only">Voortgang betaling Uden</span>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
